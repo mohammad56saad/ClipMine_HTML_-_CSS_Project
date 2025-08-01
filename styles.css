@@ -15,12 +15,50 @@ body{
 
 nav{
     width: 100vw;
-    padding: 20px;
+    padding: 15px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img{
+    margin-right: 20px;
+}
+nav a{
+    color: #707172;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.first-nav{
     align-items: center;
 }
 
-nav a{
-    color: gray;
-    text-decoration: none;
-    font-weight: 500;
+.first-nav span{
+    color: #229bd7;
+}
+
+#top{
+    height: 100vh;
+    color: white;
+}
+
+#top img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.top-text{
+    text-align: center;
+    position: relative;
+    top: 30vh;
+}
+
+.top-text h1{
+    font-weight: normal;
+    font-size: 32px;
+    margin-bottom: 10px;
 }

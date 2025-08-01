@@ -11,42 +11,55 @@
 <body>
     <header>
         <nav class="flex">
-            <img src="assests/clipmine_logo_beta_226x50.png" alt="ClipMine-logo">
-            <a href="#">Home</a>
-            <a href="#">Help</a>
-            <a href="#">Search</a>
-            <a href="#">Blog</a>
-            <a href="#">Login</a>
-            <a href="#">Signup</a>
+            <div class="flex first-nav">
+                <img src="assests/clipmine_logo_beta_226x50.png" alt="ClipMine-logo">
+                <a href="#">Home</a>
+                <a href="#">Help</a>
+                <a href="#"><i class="bi bi-search"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>&nbsp;&nbsp;&nbsp;<span>Search&nbsp;<i class="bi bi-caret-down-fill"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg></i></span></a>
+            </div>
+            <div class="second-nav">
+                <a href="#">Blog</a>
+                <a href="#">Login</a>
+                <a href="#">Signup</a>
+            </div>
         </nav>
     </header>
     <main>
         <section id="top">
-            <img src="assests/top-section_2180x750.jpg" alt="top-section-image1">
-            <img src="assests/main-img_1078x816.png" alt="top-section-image2">
-            <h1>A better Video Experience for the Web</h1>
-            <p>Clipmine enables bloggers, creators, and enthusiats to tag contents in an online videos and create a more
-                engaging video experience.</p>
-            <button>Sign Up</button>
+            <img src="assests/top-section_2180x750.jpg" alt="top-image">
+            <div class="top-text">
+                <h1>A better Video Experience for the <br>Web</h1>
+                <p>Clipmine enables bloggers, creators, and enthusiats<br>to tag contents in an online videos and create a<br>more engaging video experience.</p>
+                <button>Sign Up</button>
+            </div>
         </section>
         <section id="videos-section">
             <h1>Help your viewers discover what matters most to them!</h1>
             <article class="videos flex">
-                <div >
+                <div>
                     <img src="assests/video-gatesjobs_560x374.png" alt="Bill Gates & Steve Jobs">
                     <p>@01:00:20 Greatest things about Bill and Steve's relationship....</p>
                     <p><img src="assests/icons8-price-tag-50.png" alt="price-icon"> 4 people tagged <img
                             src="assests/icons8-forward-arrow-24.png" alt="share-icon"> 170</p>
                     <p>Embed&lt;/&gt;<img src="assests/icons8-forward-arrow-26.png" alt="share-icon">Share</p>
                 </div>
-                <div >
+                <div>
                     <img src="assests/video-emma_280x187.png" alt="Bill Gates & Steve Jobs">
                     <p>@01:59 Hook: Emma Stone Greatest thing about Bill............</p>
                     <p><img src="assests/icons8-price-tag-50.png" alt="price-icon"> 3 people tagged <img
                             src="assests/icons8-forward-arrow-24.png" alt="share-icon"> 200</p>
                     <p>Embed&lt;/&gt;<img src="assests/icons8-forward-arrow-26.png" alt="share-icon">Share</p>
                 </div>
-                <div >
+                <div>
                     <img src="assests/video-ronconway_560x374.png" alt="Real Pip Boy">
                     <p>@13:34 Real Pip-Boy with 2nd screen experience Emma Stone.....</p>
                     <p><img src="assests/icons8-price-tag-50.png" alt="price-icon"> 2 people tagged <img
@@ -59,7 +72,7 @@
         </section>
         <section id="features">
             <h1>Features</h1>
-            <article  class="flex">
+            <article class="flex">
                 <div>
                     <img src="assests/index-sharing_300x120.png" alt="meaningful-sharing">
                     <h2>Meaningful Sharing</h2>
@@ -139,7 +152,9 @@
             <p>Want to embed videos on your website? <a href="#">content</a></p>
         </section>
         <section id="input">
-            <label for="tag"><h1>What would you like to tag?</h1></label>
+            <label for="tag">
+                <h1>What would you like to tag?</h1>
+            </label>
             <input type="text" id="tag" placeholder="Paste a youtube, vimeo, or dailymotion video URL" name="link">
             <button>TAG NOW</button>
         </section>
@@ -156,7 +171,9 @@
         </section>
         <section id="links">
 
-            <p><a href="#">Contact Us</a> | <a href="#">About Clipmine</a> | <a href="#">Blog</a> | <a href="#">Help Center</a> | <a href="#"><img src="assests/icon_fb.svg" alt="icon-fb"></a><a href="#"><img src="assests/icon_tw.svg" alt="icon-tw"></a></p>
+            <p><a href="#">Contact Us</a> | <a href="#">About Clipmine</a> | <a href="#">Blog</a> | <a href="#">Help
+                    Center</a> | <a href="#"><img src="assests/icon_fb.svg" alt="icon-fb"></a><a href="#"><img
+                        src="assests/icon_tw.svg" alt="icon-tw"></a></p>
             <p>&copy; 2016 ClipMine, Inc. Terms of use Privacy Policy</p>
         </section>
     </footer>

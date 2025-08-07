@@ -41,20 +41,22 @@ nav a{
 #top{
     height: 100vh;
     color: white;
+    background-image: url(assests/top-section_2180x750.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
-#top img{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
-}
+
 
 .top-text{
     text-align: center;
-    position: relative;
-    top: 30vh;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 500px;
 }
 
 .top-text h1{
@@ -91,10 +93,13 @@ nav a{
 .videos{
     width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .videos div{
     width: 30%;
+    min-width: 280px;
+    margin: 15px auto;
 }
 
 .videos div p{
@@ -153,15 +158,19 @@ nav a{
 
 .feature-items{
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #features div{
     width: 29%;
     text-align: center;
     color: #4e5255;
+    min-width: 280px;
+    margin: 10px auto;
 }
 
 #features img{
+    width: 100%;
     border: 2px solid rgba(127,127,127, 0.1);
     padding: 20px;
     border-radius: 5px;
@@ -222,6 +231,11 @@ nav a{
 
 .collection-images{
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.collection-images article{
+    margin: auto;
 }
 
 .collection-images h2{
@@ -241,20 +255,232 @@ nav a{
 
 #users{
     background-color: #f6f6f6;
-    padding-top: 80px;
+    padding: 80px 0 40px 0;
 }
 
 #users h1{
     text-align: center;
-    margin-bottom: 40px;
     font-size: 36px;
     font-weight: lighter;
     color: rgba(0, 0, 0, 0.7);
 }
 
 .partners{
-    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 40px auto;
+    justify-items: center;
+    grid-row-gap: 40px;
+}
+
+#users p{
+    color: #4e5255;
+    text-align: center;
+}
+
+#users a{
+    text-decoration: none;
+    color: #229cd7;
+}
+
+#input{
+    margin: 80px auto;
+    text-align: center;
+}
+
+#input h1{
+    font-size: 32px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+#input input{
+    width: 35%;
+    padding: 10px;
+    color: #4e5255;
+    border: 1px solid transparent;
+    box-shadow: 0 0 2px #4e5255;
+    border-right: none;
+    margin-right: -5px;
+    min-width: 320px;
+}
+
+#input button{
+    padding: 12.5px;
+    background-color: #337ab7;
+    border: none;
+    color: white;
+}
+
+#platforms{
+    background-color: #f6f6f6;
+    padding: 80px 0;
+}
+
+#platforms h1{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.platform-icons{
+    width: 60%;
     margin: auto;
-    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+#links p{
+    text-align: center;
+    font-size: 12px;
+}
+
+#links p:first-child{
+    background-color: #1d2327;
+    padding-top: 15px;
+    padding-bottom: 3px;
+}
+
+#links p:first-child a{
+    color: #229bd7;
+    text-decoration: none;
+}
+
+#links p:first-child img{
+    width: 12px;
+}
+
+#links p:last-child{
+    background-color: black;
+    color: #4e5255;
+    padding: 12px 0;
+}
+
+/* Breakpoints for small devices to enhance responsiveness */
+
+/* 1) Small Laptops & Large Tablets (max-width: 1024px) */
+
+@media screen and (max-width: 1024px) {
+   #top{
+    height: 90vh;
+   }
+
+   .top-text h1{
+    font-size: 30px;
+    }
+
+   #videos-section{
+    margin: 80px 30px;
+    }
+
+    #features{
+    margin: auto 30px;
+    }
+
+    #benefits div{
+    width: 70%;
+    }
+
+    #collections p{
+    width: 80%;
+    }
+
+}
+
+/* 2) Small Tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .first-nav img{
+        height: 45px;
+        margin-right: 10px;
+    }
+
+    .top-text h1{
+    font-size: 28px;
+    }
+
+    nav a{
+    color: #707172;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+    }
+
+    #top{
+        height: 80vh;
+    }
+
+    #videos-section > p{
+    margin-top: 60px;
+    }
+
+    #benefits img{
+    margin-right: 40px;
+    }
+    
+    #collections p{
+    width: 90%;
+    }
+
+    .partners{
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    }
+
+    .platform-icons{
+    width: 70%;
+    }
+}
+
+/* 3) Large Smartphones / Phablets (max-width: 600px) */
+@media screen and (max-width: 600px) {
+    .first-nav img{
+        height: 40px;
+        margin-right: 5px;
+    }
+
+    nav a{
+    margin: auto 20px;
+    }
+
+    .first-nav a{
+        display: none;
+    }
+
+    .second-nav a:first-child{
+        display: none;
+    }
+
+    #top{
+        height: 60vh;
+    }
+
+    .top-text h1{
+    font-size: 26px;
+    margin-bottom: 0;
+    }
+
+    .top-text p{
+    margin-bottom: 10px;
+    padding: 15px 50px;
+    }
+
+    #videos-section > p{
+    margin-top: 40px;
+    width: 80%;
+    }
+
+    #benefits div{
+    width: 80%;
+    }
+
+    #collections h1{
+    font-size: 36px;
+    }
+}
+
+/* 4) Regular Smartphones (max-width: 480px) */
+@media screen and (max-width: 500px) {
+    
+
 }

@@ -136,7 +136,6 @@ nav a{
 }
 
 #videos-section > p{
-    margin-top: 80px;
     text-align: center;
     width: 60%;
     margin: 80px auto auto auto;
@@ -477,10 +476,208 @@ nav a{
     #collections h1{
     font-size: 36px;
     }
+
+    .collection-images img{
+        width: 400px;
+    }
+
+    .collection-images h2{
+        bottom: 95px;
+    }
+
+    .platform-icons{
+        width: 80%;
+    }
+
+    .platform-icons img{
+        width: 100px;
+    }
 }
 
 /* 4) Regular Smartphones (max-width: 480px) */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
+    .first-nav img{
+        height: 35px;
+        margin-right: 0;
+    }
+
+    nav a{
+    margin: auto 15px;
+    }    
     
+    #top{
+        height: 50vh;
+    }
+
+    .top-text h1{
+        font-size: 22px;
+    }
+
+    .top-text p{
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+        line-height: 16px;
+    }
+
+    .top-text button{
+        padding: 10px 40px;
+        font-size: 12px;
+    }
+
+    #videos-section{
+    margin: 60px 30px;
+    }
+
+    .videos div p{
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+
+    .tools{
+    padding-bottom: 12px;
+    border-radius: 5px;
+    }
+
+    #videos-section > p{
+        font-size: 14px;
+    }
+
+    #features > p{
+    font-size: 32px;
+    margin-bottom: 40px;
+    }
+
+    .feature-items h2{
+        font-size: 18px;
+    }
+
+    .feature-items p{
+        font-size: 14px;
+    }
+
+    #benefits{
+        margin: 50px auto;
+    }
+
+    #benefits h1{
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+
+    #benefits div{
+        width: 70%;
+    }
+
+    #benefits img{
+    width: 66px;
+    margin-right: 30px;
+    }
+
+    #benefits h2{
+        font-size: 18px;
+        margin: 5px  auto 5px;
+    }
+
+    #benefits p{
+        font-size: 14px;
+    }
+
+    #collections h1{
+    font-size: 32px;
+    }
+
+    .collection-images img{
+        width: 300px;
+    }
+
+    .collection-images h2{
+        bottom: 75px;
+        font-size: 18px;
+    }
+
+    #collections h1{
+        margin-bottom: 30px;
+    }
+
+    #collections p{
+        font-size: 14px;
+    }
+
+    #users h1{
+    font-size: 32px;
+    }
+
+    .grid img{
+        width: 160px;
+    }
+
+    #users p{
+        font-size: 14px;
+    }
+
+    #input h1{
+        font-size: 32px;
+    }
+
+    #input input{
+    font-size: 12px;
+    min-width: 240px;
+    }
+
+    #platforms{
+    padding: 40px 0;
+    }
+
+    .platform-icons{
+        width: 90%;
+    }
+
+    .platform-icons img{
+        width: 90px;
+    }
+
+    #links{
+        font-size: 12px;
+    }
+
+
+}
+
+/* 5) Very Small Devices / Legacy Phones (max-width: 360px) */
+@media screen and (max-width: 360px) {
+    .first-nav img{
+        height: 30px;
+        margin-right: 0;
+    }
+
+    nav a{
+        margin: auto 10px;
+    }
+
+    #top{
+        height: 40vh;
+    }
+
+    .top-text h1{
+        font-size: 18px;
+    }
+
+    .top-text p{
+        margin-bottom: 5px;
+        line-height: 14px;
+    }
+    
+    #features >  p, #benefits h1, #collections h1, #users h1, #input h1, #platforms h1{
+        font-size: 26px;
+    }
+    
+    .feature-items h2, #benefits h2, .collection-images h2{
+        font-size: 16px;
+    }
+
+    #links{
+        font-size: 10px;
+    }
 
 }

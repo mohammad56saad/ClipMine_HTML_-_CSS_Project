@@ -235,14 +235,22 @@ nav a{
 
 .collection-images article{
     margin: auto;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.collection-images article img{
+    display: block;
 }
 
 .collection-images h2{
-    position: relative;
-    justify-self: center;
-    bottom: 110px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     font-weight: normal;
+    white-space: nowrap;
 }
 
 #collections p{
@@ -327,7 +335,10 @@ nav a{
 .platform-icons{
     width: 60%;
     margin: auto;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
 }
 
 #links p{
@@ -427,8 +438,9 @@ nav a{
     }
 
     .platform-icons{
+    grid-template-columns: repeat(2, 1fr);
     width: 70%;
-    }
+}
 }
 
 /* 3) Large Smartphones / Phablets (max-width: 600px) */
@@ -481,17 +493,6 @@ nav a{
         width: 400px;
     }
 
-    .collection-images h2{
-        bottom: 95px;
-    }
-
-    .platform-icons{
-        width: 80%;
-    }
-
-    .platform-icons img{
-        width: 100px;
-    }
 }
 
 /* 4) Regular Smartphones (max-width: 480px) */
@@ -591,11 +592,6 @@ nav a{
         width: 300px;
     }
 
-    .collection-images h2{
-        bottom: 75px;
-        font-size: 18px;
-    }
-
     #collections h1{
         margin-bottom: 30px;
     }
@@ -629,13 +625,6 @@ nav a{
     padding: 40px 0;
     }
 
-    .platform-icons{
-        width: 90%;
-    }
-
-    .platform-icons img{
-        width: 90px;
-    }
 
     #links{
         font-size: 12px;

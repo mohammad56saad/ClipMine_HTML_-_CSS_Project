@@ -493,6 +493,10 @@ nav a{
         width: 400px;
     }
 
+    .partners{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
 
 /* 4) Regular Smartphones (max-width: 480px) */
@@ -604,9 +608,6 @@ nav a{
     font-size: 32px;
     }
 
-    .grid img{
-        width: 160px;
-    }
 
     #users p{
         font-size: 14px;
